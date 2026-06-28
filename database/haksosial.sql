@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Jun 2026 pada 09.06
+-- Waktu pembuatan: 28 Jun 2026 pada 09.32
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -62,7 +62,9 @@ CREATE TABLE `data_pengetahuan` (
 --
 
 INSERT INTO `data_pengetahuan` (`id_pengetahuan`, `judul`, `kategori`, `isi`, `dibuat_pada`, `diupdate_pada`) VALUES
-(1, 'Syarat Program Keluarga Harapan', 'PKH', 'Program Keluarga Harapan diberikan kepada keluarga miskin yang terdaftar dalam DTKS.', '2026-06-28 07:00:12', '2026-06-28 07:00:12');
+(1, 'Syarat Program Keluarga Harapan', 'PKH', 'Program Keluarga Harapan diberikan kepada keluarga miskin yang terdaftar dalam DTKS.', '2026-06-28 07:00:12', '2026-06-28 07:00:12'),
+(2, 'Syarat BPNT', 'BPNT', 'BPNT diberikan kepada keluarga penerima manfaat yang telah terdaftar dalam DTKS.', '2026-06-28 07:14:48', '2026-06-28 07:14:48'),
+(3, 'Cara Daftar DTKS', 'DTKS', 'Masyarakat dapat mendaftar DTKS melalui desa atau kelurahan setempat.', '2026-06-28 07:14:48', '2026-06-28 07:14:48');
 
 -- --------------------------------------------------------
 
@@ -144,7 +146,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT untuk tabel `data_pengetahuan`
 --
 ALTER TABLE `data_pengetahuan`
-  MODIFY `id_pengetahuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_pengetahuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `laporan_pengaduan`
