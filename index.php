@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include_once 'database.php';
+include_once 'model/koneksi.php';
 
 // Load a specific page from the given directory
 // If the file does not exist, load the 404 error page
