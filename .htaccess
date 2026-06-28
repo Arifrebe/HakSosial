@@ -1,0 +1,14 @@
+RewriteEngine On
+# Enable mod_rewrite to allow URL rewriting
+
+ErrorDocument 404 /404.php
+# Use a custom error page for 404 (Not Found) errors
+
+# Remove trailing slashes from URLs
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+)/$ $1 [R=301,L]
+
+# Route requests for non-existent files or directories to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

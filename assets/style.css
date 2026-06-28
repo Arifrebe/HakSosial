@@ -1,0 +1,56 @@
+/* NAVBAR STYLE */
+.search-bar {
+    width: 95%;
+}
+
+/* On larger screens (min-width: 1000px) */
+@media (min-width: 1000px) {
+    .search-bar {
+        width: 75%; /* Sets search bar width to 75% for large screens */
+    }
+}
+
+/* On medium-sized screens (max-width: 999px) */
+@media (max-width: 999px) {
+    .search-bar {
+        width: 75%; /* Sets search bar width to 75% for medium screens */
+    }
+}
+
+/* On small screens (max-width: 676px) */
+@media (max-width: 676px) {
+    .search-bar {
+        width: 65%; /* Sets search bar width to 65% for smaller screens */
+    }
+}
+
+/* On very small screens (max-width: 493px) */
+@media (max-width: 493px) {
+    .search-bar {
+        width: 55%; /* Sets search bar width to 55% for very small screens */
+    }
+}
+
+/* On extra small screens (max-width: 360px) */
+@media (max-width: 362px) {
+    .search-bar {
+        width: 40%; /* Sets search bar width to 40% for extra small screens */
+    }
+}
+
+/* Carousel */
+.carousel-inner {
+    max-height: 300px; /* Atur tinggi maksimal */
+    overflow: hidden; /* Mencegah gambar keluar dari batas */
+}
+
+.carousel-inner img {
+    height: 100%; /* Pastikan gambar mengikuti batas tinggi */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+}
+
+/* ActionButton */
+.actMenu{
+    width: 70px; 
+    height: 70px;
+}
